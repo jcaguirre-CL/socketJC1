@@ -23,7 +23,7 @@ app.get('/azul', function(req, res){///test
 });
 io.on('connection', function(socket){
   console.log('a user connected');
-
+//After create a branch branch1
   socket.on('chat message', function(msg){
     console.log('message from client: ' + msg);
     io.emit('chat message', msg);
