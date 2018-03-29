@@ -13,7 +13,7 @@ app.get('/verde', function(req, res){
         res.write('Cambiamos a verde');
         res.end();
 });
-
+////From githug
 app.get('/azul', function(req, res){
 	console.log('cambiamos a azul');
 	io.emit('cambiarAzul', 'azul');
