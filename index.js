@@ -14,7 +14,7 @@ app.get('/verde', function(req, res){
         res.end();
 });
 ////From githug
-app.get('/azul', function(req, res){
+app.get('/azul', function(req, res){///test
 	console.log('cambiamos a azul');
 	io.emit('cambiarAzul', 'azul');
 	res.writeHead(200, {'Content-Type': 'text/html'});
